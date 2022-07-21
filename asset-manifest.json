@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CompetePro/static/css/main.84541b51.css",
-    "main.js": "/CompetePro/static/js/main.b942e6bc.js",
+    "main.js": "/CompetePro/static/js/main.a150459d.js",
     "static/js/787.e403dcb9.chunk.js": "/CompetePro/static/js/787.e403dcb9.chunk.js",
     "static/media/mission.jpg": "/CompetePro/static/media/mission.50cfc04cdb777903811a.jpg",
     "static/media/fullimage.jpeg": "/CompetePro/static/media/fullimage.e27677a90a1a600e3d58.jpeg",
@@ -17,11 +17,11 @@
     "static/media/umer.jpeg": "/CompetePro/static/media/umer.f568cbc9b50ac6615c5b.jpeg",
     "index.html": "/CompetePro/index.html",
     "main.84541b51.css.map": "/CompetePro/static/css/main.84541b51.css.map",
-    "main.b942e6bc.js.map": "/CompetePro/static/js/main.b942e6bc.js.map",
+    "main.a150459d.js.map": "/CompetePro/static/js/main.a150459d.js.map",
     "787.e403dcb9.chunk.js.map": "/CompetePro/static/js/787.e403dcb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84541b51.css",
-    "static/js/main.b942e6bc.js"
+    "static/js/main.a150459d.js"
   ]
 }
