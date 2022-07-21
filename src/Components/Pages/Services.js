@@ -45,7 +45,7 @@ const Services = () => {
         <h3 className='stylishfont'>our work</h3>
       </div>
       <p className=' wordspacing'>Top Websites we made.</p>
-      <ul>
+      <ul class>
         {
           websites.map((web, index) => {
             return (
