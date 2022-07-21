@@ -14,8 +14,8 @@ function App() {
         <Particle />
         <Menu />
         <Routes>
-          <Route path='/CompetePro' element={<Hero />} />
           <Route path='/' element={<Hero />} />
+          <Route path='/CompetePro' element={<Hero />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
