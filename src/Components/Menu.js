@@ -43,7 +43,7 @@ function Menu() {
             </nav>
             <aside className={menu ? 'open' : ''}>
                 <ul>
-                    <NavLink onClick={toggle} to="/" className={({ isActive }) => isActive ? "active-link" : ''}>
+                    <NavLink onClick={toggle} to="/CompetePro" className={({ isActive }) => isActive ? "active-link" : ''}>
                         <li data-value="Compete Pro" className='thisinnerhtml'>Home</li>
                     </NavLink>
                     <NavLink onClick={toggle} to="/about" className={({ isActive }) => isActive ? "active-link" : ''}>
