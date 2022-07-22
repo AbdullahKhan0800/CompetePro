@@ -27,7 +27,7 @@ const teamData = [
         name: "Faizan Ghani",
         title: "Social Media Marketer",
         linkedin: "https://www.linkedin.com/in/faizan-ghani-196816221/",
-        skills: "I'm Abdullah Khan. I have been working as a shopify theme developer for more than 3 years as well as a MERN stack developer. I have worked with different programming languages such as HTML, CSS, JavaScript, BootStrap, Tailwind.css, PHP, MySQL, Nodejs, MongoDB, Express, and React.I am an expert in front end development, and I have the skills of HTML, CSS, and JavaScript to convert PSD to HTML and Figma to HTML. Please check my code and rate it on my github account as well.I am currently working as a shopify theme developer and have worked on more than 30 shops. From the shopify dawn theme, I built more than four pre-built themes. Making custom forms and Collection pages and filters with these staff relaxes me a lot."
+        skills: "I'm here to do social media marketing for you. your 90% business based on marketing and the world gone a shift on digital media, so boost your business by social media marketing."
     },
     {
         img: waseem,
