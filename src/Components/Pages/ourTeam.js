@@ -32,7 +32,7 @@ export const OURTEAM = () => {
                                 <button className='btnarray' onClick={() => {
                                     changeContent(phone)
                                 }}>Profile</button>
-                                <a href={phone.linkedin}><GrLinkedinOption /></a>
+                                <a href={phone.linkedin} target="_blank"><GrLinkedinOption /></a>
                             </div>
                         </div>
                     )
