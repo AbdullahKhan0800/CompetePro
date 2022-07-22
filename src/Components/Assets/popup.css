@@ -44,10 +44,14 @@
 }
 
 .porprgatrion {
-    width: min(90%, 800px);
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: white;
     margin: auto;
-    align-items: center;
+    width: min(90%,800px);
+    padding: 29px;
+    border-radius: 40px;
+    border: 2.5px solid black;
 }
