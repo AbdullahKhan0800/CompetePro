@@ -38,7 +38,7 @@ const teamData = [
     },
     {
         img: umer,
-        name: "Umer Farook",
+        name: "Umer Farooq",
         title: "Graphic Designer",
         linkedin: "https://www.linkedin.com/in/umer-farooq-0340a4223",
         skills: "I am an expert in Graphic Design and logo design several services including, Social Media Posts Design Stationery Design Banner Design Carousel Design Flyer/Brochures Design Infographic design I am available to serve you my best services regrading graphic design if needed.Are you have you any problem related toany kind of design? Let's discuss. It's my pleasure to serve you!"
