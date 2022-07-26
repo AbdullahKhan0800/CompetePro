@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Assets/aboutus.css'
-import fullImages from '.././Images/fullimage.jpeg'
+import fullImages from '.././Images/fullimage.jpg'
 
 
 export const Director = () => {
