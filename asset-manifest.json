@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/CompetePro/static/css/main.d3136a2f.css",
-    "main.js": "/CompetePro/static/js/main.7b84e3d9.js",
+    "main.js": "/CompetePro/static/js/main.8a11e499.js",
     "static/js/787.e403dcb9.chunk.js": "/CompetePro/static/js/787.e403dcb9.chunk.js",
-    "static/media/mission.jpg": "/CompetePro/static/media/mission.50cfc04cdb777903811a.jpg",
-    "static/media/fullimage.jpeg": "/CompetePro/static/media/fullimage.e27677a90a1a600e3d58.jpeg",
     "static/media/mylogo.jpg": "/CompetePro/static/media/mylogo.b327510bf1be734cb8d5.jpg",
+    "static/media/fullimage.jpg": "/CompetePro/static/media/fullimage.4af4ec5bcbf9f17cb077.jpg",
     "static/media/POLYA.otf": "/CompetePro/static/media/POLYA.b13aaec49e576fe89e9d.otf",
-    "static/media/vision.jpg": "/CompetePro/static/media/vision.2fcdfe592fb528d88da3.jpg",
     "static/media/waseem.jpg": "/CompetePro/static/media/waseem.cc8a0d64015099620d14.jpg",
+    "static/media/mission.jpg": "/CompetePro/static/media/mission.65ae7ecd7aae9fcb9513.jpg",
+    "static/media/vision.jpg": "/CompetePro/static/media/vision.f4ce983f10d7de6576e6.jpg",
     "static/media/faizan.jpg": "/CompetePro/static/media/faizan.59268432162c6ce3834b.jpg",
     "static/media/miss.jpeg": "/CompetePro/static/media/miss.abfd17e1623d56406c54.jpeg",
     "static/media/asad.jpg": "/CompetePro/static/media/asad.bd609eec7932f7a33e25.jpg",
@@ -17,11 +17,11 @@
     "static/media/umer.jpeg": "/CompetePro/static/media/umer.f568cbc9b50ac6615c5b.jpeg",
     "index.html": "/CompetePro/index.html",
     "main.d3136a2f.css.map": "/CompetePro/static/css/main.d3136a2f.css.map",
-    "main.7b84e3d9.js.map": "/CompetePro/static/js/main.7b84e3d9.js.map",
+    "main.8a11e499.js.map": "/CompetePro/static/js/main.8a11e499.js.map",
     "787.e403dcb9.chunk.js.map": "/CompetePro/static/js/787.e403dcb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3136a2f.css",
-    "static/js/main.7b84e3d9.js"
+    "static/js/main.8a11e499.js"
   ]
 }
