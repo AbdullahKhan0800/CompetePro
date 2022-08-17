@@ -4,6 +4,7 @@ import Faizan from '../Images/faizan.jpg'
 import asad from '../Images/asad.jpg'
 import waseem from '../Images/waseem.jpg'
 import miss from '../Images/miss.jpeg'
+import hassan from '../Images/hassan.jpg'
 
 const teamData = [
 
@@ -43,11 +44,18 @@ const teamData = [
         linkedin: "https://www.linkedin.com/in/umer-farooq-0340a4223",
         skills: "I am an expert in Graphic Design and logo design several services including, Social Media Posts Design Stationery Design Banner Design Carousel Design Flyer/Brochures Design Infographic design I am available to serve you my best services regrading graphic design if needed.Are you have you any problem related toany kind of design? Let's discuss. It's my pleasure to serve you!"
     },
+    // {
+    //     img: miss,
+    //     name: "Benish Rashid",
+    //     title: "Content Writter",
+    //     linkedin: "https://www.linkedin.com/in/benish-rashid-seo-specialist",
+    //     skills: "I am a professional content writer with more than 5 years of experience, and I'm fortunate to give a head start to all kinds of writing styles. Writing never makes me feel exhausted because I love to write. My writing is a tribute to the buyer's concerns. I am different because I prefer doing more research than other competitors, from understanding the buyer's persona to leveraging the customer's services; that's what I'm experienced in executing. "
+    // },
     {
-        img: miss,
-        name: "Benish Rashid",
+        img: hassan,
+        name: "Hassan Razaaq",
         title: "Content Writter",
-        linkedin: "https://www.linkedin.com/in/benish-rashid-seo-specialist",
+        linkedin: "https://www.linkedin.com/in/umer-farooq-0340a4223",
         skills: "I am a professional content writer with more than 5 years of experience, and I'm fortunate to give a head start to all kinds of writing styles. Writing never makes me feel exhausted because I love to write. My writing is a tribute to the buyer's concerns. I am different because I prefer doing more research than other competitors, from understanding the buyer's persona to leveraging the customer's services; that's what I'm experienced in executing. "
     }
 

@@ -10,7 +10,7 @@ import websites from './servicesdata'
 const Services = () => {
   return (
     <div className='contactusall container'>
-      <p className='mainnavparagrah'>You are viewing <span className='currenturl'><NavLink to="/">Home</NavLink></span>/<span className='currenturl'><NavLink to="/services">Services</NavLink></span></p>
+      <p className='mainnavparagrah'>You are viewing <span className='currenturl'><NavLink to="/CompetePro/">Home</NavLink></span>/<span className='currenturl'><NavLink to="/services">Services</NavLink></span></p>
       <div className='backfont'>
         <h3 className='stylishfont'>Services</h3>
       </div>

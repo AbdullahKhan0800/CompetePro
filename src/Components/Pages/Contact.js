@@ -25,7 +25,7 @@ const Contact = () => {
   };
   return (
     <div className='contactusall container'>
-      <p className='mainnavparagrah'>You are viewing <span className='currenturl'><NavLink to="/">Home</NavLink></span>/<span className='currenturl'><NavLink to="/contact">Contact Us</NavLink></span></p>
+      <p className='mainnavparagrah'>You are viewing <span className='currenturl'><NavLink to="/CompetePro/">Home</NavLink></span>/<span className='currenturl'><NavLink to="/contact">Contact Us</NavLink></span></p>
       <div className='backfont'>
         <h3 className='stylishfont'>Contact Us</h3>
       </div>
