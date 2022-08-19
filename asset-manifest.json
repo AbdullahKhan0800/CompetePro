@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/CompetePro/static/css/main.377dd523.css",
-    "main.js": "/CompetePro/static/js/main.d9422037.js",
+    "main.js": "/CompetePro/static/js/main.00d61ed6.js",
     "static/js/787.e403dcb9.chunk.js": "/CompetePro/static/js/787.e403dcb9.chunk.js",
     "static/media/mylogo.jpg": "/CompetePro/static/media/mylogo.b327510bf1be734cb8d5.jpg",
     "static/media/fullimage.jpg": "/CompetePro/static/media/fullimage.4af4ec5bcbf9f17cb077.jpg",
+    "static/media/website(2).png": "/CompetePro/static/media/website(2).00fe637e46f0bd7c427b.png",
     "static/media/POLYA.otf": "/CompetePro/static/media/POLYA.b13aaec49e576fe89e9d.otf",
     "static/media/website(6).png": "/CompetePro/static/media/website(6).a04f62f45a93830bea01.png",
     "static/media/waseem.jpg": "/CompetePro/static/media/waseem.cc8a0d64015099620d14.jpg",
@@ -18,7 +19,6 @@
     "static/media/website(9).png": "/CompetePro/static/media/website(9).fd3a12b3194cf05962cb.png",
     "static/media/website(1).png": "/CompetePro/static/media/website(1).ca0ec78b5eb3ca40f0b9.png",
     "static/media/faizan.jpg": "/CompetePro/static/media/faizan.59268432162c6ce3834b.jpg",
-    "static/media/website(2).png": "/CompetePro/static/media/website(2).46f51850b115a12e0c68.png",
     "static/media/website(7).png": "/CompetePro/static/media/website(7).66bf67dd0f2b2598c004.png",
     "static/media/miss.jpeg": "/CompetePro/static/media/miss.abfd17e1623d56406c54.jpeg",
     "static/media/website(8).png": "/CompetePro/static/media/website(8).f06d13219342b3c499d9.png",
@@ -28,11 +28,11 @@
     "static/media/umer.jpeg": "/CompetePro/static/media/umer.f568cbc9b50ac6615c5b.jpeg",
     "index.html": "/CompetePro/index.html",
     "main.377dd523.css.map": "/CompetePro/static/css/main.377dd523.css.map",
-    "main.d9422037.js.map": "/CompetePro/static/js/main.d9422037.js.map",
+    "main.00d61ed6.js.map": "/CompetePro/static/js/main.00d61ed6.js.map",
     "787.e403dcb9.chunk.js.map": "/CompetePro/static/js/787.e403dcb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.377dd523.css",
-    "static/js/main.d9422037.js"
+    "static/js/main.00d61ed6.js"
   ]
 }
