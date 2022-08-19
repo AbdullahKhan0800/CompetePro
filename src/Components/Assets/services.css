@@ -39,14 +39,54 @@
     font-size: 25px;
     padding-bottom: 10px;
 }
+
 .insiemaplink{
-    text-align: center;
+    list-style: none;
+}
+.insiemaplink img:hover{
+    box-shadow:0 6px 17.9px 8.1px rgb(0 0 0 / 30%), 0 11px 7.76px 0.24px rgb(0 0 0 / 10%), 0 14px 17.86px 1.14px rgb(0 0 0 / 14%), 0 20px 24.3px 2.7px rgb(0 0 0 / 6%);
+    border-radius: 30px;
+    transform: scale(1.08);
 }
 .insiemaplink a{
-    text-decoration: underline;
-    list-style-type: circle;
-    cursor: pointer;
-    padding-left: 10px;
+    cursor: pointer;    
+}
+.insiemaplink img{
+    width: 100%;
+    border-radius: 30px;
+    transition: transform .5s;
+}
+@media screen and (min-width:730px){
+    .ulimageslinks{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        padding:20px 0 50px 0;
+    }
+    .ulimageslinks li:nth-child(8){
+       grid-row: span 3;
+       grid-column: span 2;
+    }
+    .ulimageslinks li:nth-child(5){
+       grid-row: span 2;
+    }
+    .ulimageslinks li:nth-child(4){
+       grid-column: span 2;
+       grid-row: span 2;
+    }
+    .ulimageslinks li:nth-child(3){   
+       grid-row: span 3;
+    }
+}
+@media screen and (max-width:730px){
+    .ulimageslinks{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .insiemaplink img{
+        box-shadow:0 6px 17.9px 8.1px rgb(0 0 0 / 30%), 0 11px 7.76px 0.24px rgb(0 0 0 / 10%), 0 14px 17.86px 1.14px rgb(0 0 0 / 14%), 0 20px 24.3px 2.7px rgb(0 0 0 / 6%);        
+    }
 }
 @media screen and (max-width:862px){
     .servicese {

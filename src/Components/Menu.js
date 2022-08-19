@@ -27,9 +27,9 @@ function Menu() {
     return (
         <>
             <nav className='sidebar'>
-                <div>
-                    <h1 onClick={toggle} className={togle ? 'd-none m-0' : 'm-0'} ><img className='Logo' src={LogoBlue} alt="Compete Programing" /></h1>
-                    <h1 onClick={toggle} className={togle ? 'm-0' : 'd-none m-0'}><img className='Logo' src={LogoWhite} alt="Compete Programing" /></h1>
+                <div>                    
+                    <h1 onClick={toggle} className={togle ? 'ani-none m-0' : 'ani-block m-0'} ><NavLink to="/CompetePro"><img className='Logo' src={LogoBlue} alt="Compete Programing" /></NavLink></h1>
+                    <h1 onClick={toggle} className={togle ? 'ani-block m-0' : 'ani-none m-0'}><img className='Logo' src={LogoWhite} alt="Compete Programing" /></h1>
                 </div>
                 <div className='menu-class' onClick={toggle}>
                     <span className={togle ? 'hamburger-menu-text m-0 text-white' : 'hamburger-menu-text m-0'}>MENU</span>

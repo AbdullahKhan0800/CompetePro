@@ -44,12 +44,16 @@ const Services = () => {
       <div className='backfont'>
         <h3 className='stylishfont'>our work</h3>
       </div>
-      <p className=' wordspacing'>Top Websites we made.</p>
-      <ul class>
+      <p className='wordspacing'>Top Websites we made.</p>
+      <ul class='ulimageslinks'>
         {
           websites.map((web, index) => {
             return (
-              <li className='insiemaplink' key={index}>{web.name}<a href={web.link} target="_blank">Open</a></li>
+              <li className='insiemaplink' key={index}>
+                <a href={web.link} target="_blank">
+                  <img src={web.img} alt="worked website" />
+                </a>
+              </li>
             )
           })
         }

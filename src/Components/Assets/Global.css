@@ -36,6 +36,35 @@ a {
 .d-none{
     display: none;
 }
+.ani-block{
+    animation:blocknone 1s linear;
+    display: block;
+}
+@keyframes blocknone {
+    0%{
+        opacity: 0;
+        display: none;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+
+.ani-none{
+    animation:nonenone 1s linear;
+    display: none;
+}
+@keyframes nonenone {
+    0%{
+        opacity: 1;
+        display: block;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
 
 .bc-white {
     background-color: white !important;
