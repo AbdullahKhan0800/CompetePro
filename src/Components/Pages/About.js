@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 const About = () => {
   return (
     <div className='contactusall container'>
-      <p className='mainnavparagrah'>You are viewing <span className='currenturl'><NavLink to="/CompetePro/">Home</NavLink></span>/<span className='currenturl'><NavLink to="/about">About Us</NavLink></span></p>
+      <p className='mainnavparagrah'>You are viewing <span className='currenturl'><NavLink to="/">Home</NavLink></span>/<span className='currenturl'><NavLink to="/about">About Us</NavLink></span></p>
       <div className='backfont'>
         <h3 className='stylishfont'>About Us</h3>
       </div>

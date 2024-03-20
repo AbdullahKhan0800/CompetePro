@@ -28,7 +28,7 @@ function Menu() {
         <>
             <nav className='sidebar'>
                 <div>                    
-                    <h1 onClick={toggle} className={togle ? 'ani-none m-0' : 'ani-block m-0'} ><NavLink to="/CompetePro"><img className='Logo' src={LogoBlue} alt="Compete Programing" /></NavLink></h1>
+                    <h1 onClick={toggle} className={togle ? 'ani-none m-0' : 'ani-block m-0'} ><NavLink to="/"><img className='Logo' src={LogoBlue} alt="Compete Programing" /></NavLink></h1>
                     <h1 onClick={toggle} className={togle ? 'ani-block m-0' : 'ani-none m-0'}><img className='Logo' src={LogoWhite} alt="Compete Programing" /></h1>
                 </div>
                 <div className='menu-class' onClick={toggle}>
@@ -43,7 +43,7 @@ function Menu() {
             </nav>
             <aside className={menu ? 'open' : ''}>
                 <ul>
-                    <NavLink onClick={toggle} to="/CompetePro" className={({ isActive }) => isActive ? "active-link" : ''}>
+                    <NavLink onClick={toggle} to="/" className={({ isActive }) => isActive ? "active-link" : ''}>
                         <li data-value="Compete Pro" className='thisinnerhtml'>Home</li>
                     </NavLink>
                     <NavLink onClick={toggle} to="/about" className={({ isActive }) => isActive ? "active-link" : ''}>
