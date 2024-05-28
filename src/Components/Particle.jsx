@@ -83,7 +83,7 @@ function Particle() {
                         "enable": true,
                         "outMode": "out",
                         "random": false,
-                        "speed": 8,
+                        "speed": 6,
                         "straight": false
                     },
                     "number": {
