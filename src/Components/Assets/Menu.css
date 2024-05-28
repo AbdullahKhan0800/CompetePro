@@ -15,6 +15,9 @@
     align-items: center;
     top: 0 !important;
 }
+.sidebar h1{
+    position: absolute;
+}
 
 .menu-class {
     position: fixed;

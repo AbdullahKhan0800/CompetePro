@@ -19,7 +19,8 @@ h6 {
 
 a,
 p,
-span,li {
+span,
+li {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -33,34 +34,42 @@ a {
 }
 
 /* using in menu  */
-.d-none{
-    display: none;
-}
-.ani-block{
-    animation:blocknone 1s linear;
+.d-block {
     display: block;
 }
+.d-none {
+    display: none;
+}
+
+.ani-block {
+    animation: blocknone 1s linear;
+    display: block;
+}
+
 @keyframes blocknone {
-    0%{
+    0% {
         opacity: 0;
         display: none;
     }
-    100%{
+
+    100% {
         display: block;
         opacity: 1;
     }
 }
 
-.ani-none{
-    animation:nonenone 1s linear;
+.ani-none {
+    animation: nonenone 1s linear;
     display: none;
 }
+
 @keyframes nonenone {
-    0%{
+    0% {
         opacity: 1;
         display: block;
     }
-    100%{
+
+    100% {
         opacity: 0;
         display: none;
     }
@@ -73,11 +82,13 @@ a {
 .text-white {
     color: white !important;
 }
-.h2{
+
+.h2 {
     font-size: 2.5rem;
-    
+
 }
-.stylishfont{
+
+.stylishfont {
     font-family: POLYA !important;
     font-size: 140px;
     font-weight: 100;
@@ -88,30 +99,34 @@ a {
 .center {
     text-align: center;
 }
-.container{
+
+.container {
     width: 84%;
     margin: 61px auto 0 auto;
 }
-.currenturl{
+
+.currenturl {
     color: #1c72b8;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
-.mainnavparagrah{
+
+.mainnavparagrah {
     font-size: 17px;
     letter-spacing: 1px;
 }
 
-.wordspacing{
+.wordspacing {
     word-spacing: 2px;
     font-size: 20px;
     letter-spacing: 2px;
     padding: 0 0 10px;
     text-align: center;
 }
-@media screen and (max-width:1082px){
-    .stylishfont{
-        font-size:12vw;
+
+@media screen and (max-width:1082px) {
+    .stylishfont {
+        font-size: 12vw;
     }
 }
 

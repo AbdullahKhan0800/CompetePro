@@ -27,7 +27,7 @@ function Menu() {
     return (
         <>
             <nav className='sidebar'>
-                <div>                    
+                <div style={{position: 'relative', width: '89px', height: 'auto'}}>                    
                     <h1 onClick={toggle} className={togle ? 'ani-none m-0' : 'ani-block m-0'} ><NavLink to="/"><img className='Logo' src={LogoBlue} alt="Compete Programing" /></NavLink></h1>
                     <h1 onClick={toggle} className={togle ? 'ani-block m-0' : 'ani-none m-0'}><img className='Logo' src={LogoWhite} alt="Compete Programing" /></h1>
                 </div>
