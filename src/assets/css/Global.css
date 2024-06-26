@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* this is all global css */
+@font-face {
+    font-family: POLYA;
+    src: url("../fonts/POLYA.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'EurostileExt';
+    src: url("../fonts/eurostileext-reg-webfont.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratLight';
+    src: url("../fonts/Akkurat-Light.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratBold';
+    src: url("../fonts/Akkurat-Bold.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TisaOT';
+    src: url("../fonts/TisaOT.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-Euro {
+    font-family: 'EurostileExt' !important;
+}
+
+.font-AkkuratLight {
+    font-family: 'AkkuratLight' !important;
+}
+
+.font-TisaOT {
+    font-family: 'TisaOT' !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+body,
+p {
+    font-family: 'AkkuratLight';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'TisaOT';
+}
+
+a {
+    font-family: 'AkkuratLight';
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* using in menu  */
+
+.secondary-btn {
+    padding: 9px 12px 9px;
+    line-height: 1;
+    margin: 5px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: .8rem;
+    color: #1c72b8;
+    font-family: 'AkkuratLight';
+    text-transform: uppercase;
+    border: 1px solid #1c72b8;
+    padding-top: 10px;
+}
+
+.primary-btn {
+    line-height: 1;
+    padding: 9px 12px 9px;
+    margin: 5px;
+    text-transform: uppercase;
+    font-family: 'AkkuratLight';
+    background: #1c72b8;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: .8rem;
+    color: #fff;
+    border: 1px solid #1c72b8;
+    padding-top: 10px;
+}
+
+.ani-block {
+    animation: blocknone 1s linear;
+    display: block;
+}
+
+@keyframes blocknone {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.ani-none {
+    animation: nonenone 1s linear;
+    display: none;
+}
+
+@keyframes nonenone {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.h2 {
+    font-size: 2.5rem;
+}
+
+.message {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    border: 1px solid #1c72b8;
+    border-radius: 40px;
+    background: #1c72b8;
+    font-weight: lighter;
+    float: left;
+    border-top-left-radius: 0;
+    font-size: .905rem;
+    padding: 10px 15px 8px;
+}
+
+.stylishfont {
+    font-family: POLYA !important;
+    font-size: 140px;
+    font-weight: 100;
+    color: #1c72b8;
+    /* text-align: center; */
+}
+
+.container {
+    width: 100%;
+    padding: 0 4rem;
+}
+
+.currenturl {
+    color: #1c72b8;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.wordspacing {
+    word-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 0 0 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:1082px) {
+    .stylishfont {
+        font-size: 12vw;
+    }
+}
