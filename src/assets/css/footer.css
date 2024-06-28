@@ -1,0 +1,1197 @@
+
+/* footer  */
+footer {
+    background-color: white;
+    color: black !important;
+}
+
+.footerHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    color: #000;
+}
+
+.footer-acher {
+    text-decoration: none;
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+
+.mainFooterMenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.navigations ul li a {
+    font-weight: 500;
+}
+
+.navigations {
+    display: flex;
+    justify-content: space-between;
+    width: min(750px, 100%);
+}
+
+.footer-heading,
+.footer_copyRight li {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.newsletter {
+    max-width: 500px;
+}
+
+.newsletter-MainHeading {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.navigations .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.margin-footer_content {
+    margin: 20px 0 40px 0
+}
+
+.footer_content,
+footer .navigations .nav li {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer .navigations .nav ul {
+    list-style-type: none;
+    display: grid;
+    gap: 20px;
+}
+
+.News_Letter_Input {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.footer_newsletter {
+    position: relative;
+}
+
+.footer_newsletter label {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: 0.4s all;
+}
+
+:focus-within~.labelEmailNewsletter,
+.is-filled~.labelEmailNewsletter,
+.News_letter_value {
+    transform: scale(.733) translateY(calc(-25px)) translate(0px);
+    left: -15px !important;
+    font-size: 400;
+}
+
+.arrowUpNewsletter,
+.arrowUplink {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 30px;
+    height: 30px;
+    overflow: hidden;
+    width: 30px;
+}
+
+.followarrowUplink {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-size: 25px;
+    height: 30px;
+    overflow: hidden;
+    width: 30px;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.owifjlksdnc input[type="checkbox"] {
+    accent-color: #FFCC32;
+    width: 17px;
+    height: 17px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0px;
+}
+
+.oiewfjklndsvkqlwjs {
+    width: min(1000px, 100%);
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+}
+.loadingSVG{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.owifjlksdnc input[type="checkbox"]::before {
+    content: '';
+    width: 15px;
+    height: 13px;
+    background-image: url('../Images/tick.svg');
+    transform: scale(0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.owifjlksdnc input[type="checkbox"]:checked {
+    background-color: #FFCC32;
+}
+
+.owifjlksdnc input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+
+.aboutusImages {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+form .aboutUsPPP {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.innerPolicy.aboutUs .aboutUsPPP {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.weoiflkjdnc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .innerPolicy.aboutUs .ieklrnv{
+    color: white;
+    border: 2px solid white;
+    font-weight: 500;
+    font-size: 40px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+
+} */
+.wiefklndsv::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+    left: -15px;
+}
+
+.lskdjowiejdsvn::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    left: -18px;
+    top: 11px;
+}
+form input:focus-visible, form textarea{
+    /* border: 0px; */
+    outline: 0px;
+}
+
+.owifjlksdnc input[type="submit"] {
+    background-color:white;
+    color: black;
+    padding: 20px 45px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.lskdjowiejdsvn {
+    font-weight: bold;
+    position: relative;
+    left: 15px;
+    display: flex;
+}
+
+.wiefklndsv {
+    font-weight: bold;
+    position: relative;
+    left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.arrowUplink {
+    top: -3px;
+}
+
+.arrowUpNewsletter>div,
+.arrowUplink>div,
+.followarrowUplink>div {
+    display: flex;
+    transition: 0.3s all;
+}
+
+.followUsFooter li {
+    position: relative;
+    padding-right: 40px;
+}
+
+
+
+.footer_newsletter:hover .firstArrow,
+.followUsFooter li:hover .firstArrow {
+    transform: translateY(-30px);
+}
+
+.footer_newsletter:hover .secondArrow,
+.followUsFooter li:hover .secondArrow {
+    transform: translateY(-30px);
+}
+
+.footer_copyRight {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.copyright ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 30px;
+}
+
+
+@media screen and (max-width: 1600px) {
+
+    .footer_content,
+    footer .navigations .nav li,
+    .footer_copyRight li,
+    .News_Letter_Input,
+    .unerlineLInk,
+    p.paragraph {
+        font-size: 16px;
+    }
+
+    .footer-heading,
+    .footer_newsletter label,
+    .rightlanguagesTabs .tab,
+    .leftlanguagesTabs .tab,
+    .navLink a,
+    .animation-btn a,
+    .layoutnav h4 {
+        font-size: 18px;
+    }
+
+    .smallHeadingText,
+    .mainReview,
+    .smallHeadingText {
+        font-size: 19px;
+    }
+
+    .arrowUpNewsletter,
+    .arrowUplink,
+    .followarrowUplink {
+        font-size: 27px;
+        height: 27px;
+        width: 25px;
+    }
+
+    .followarrowUplink,
+    .arrowUplink {
+        top: 1px;
+    }
+
+    .followUsFooter li,
+    .unerlineLInk {
+        padding-right: 30px;
+    }
+
+    .ArrowScroll {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .upArrowScroll,
+    .downArrowScroll {
+        transform: translateY(-58px);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .upperClientSlide {
+        padding: 0 10px;
+    }
+
+    .starRates {
+        font-size: 18px;
+    }
+
+    .shadeImageinClientReview {
+        width: 300px;
+        height: 300px;
+    }
+
+    .max-width,
+    .ourServices {
+        max-width: 1000px;
+    }
+
+    .h2,
+    .headingHolo {
+        font-size: 90px;
+    }
+
+    .h3 {
+        font-size: 50px;
+    }
+
+    .h4 {
+        font-size: 40px;
+    }
+
+    .newsletter-MainHeading {
+        font-size: 30px;
+    }
+
+    .footer_content,
+    footer .navigations .nav li,
+    .footer_copyRight li,
+    .News_Letter_Input,
+    .unerlineLInk,
+    p.paragraph {
+        font-size: 15px;
+    }
+
+    .footer-heading,
+    .footer_newsletter label,
+    .rightlanguagesTabs .tab,
+    .leftlanguagesTabs .tab,
+    .navLink a,
+    .animation-btn a,
+    .layoutnav h4 {
+        font-size: 16px;
+    }
+
+    .smallHeadingText,
+    .mainReview,
+    .smallHeadingText {
+        font-size: 18px;
+    }
+
+    .animation-btn a {
+        padding: 11.2px 36.8px;
+    }
+
+    .innerMain {
+        border-radius: 0px 0px 24px 24px;
+    }
+
+    .arrowUpNewsletter,
+    .arrowUplink,
+    .followarrowUplink {
+        font-size: 20px;
+        height: 23px;
+        width: 21px;
+    }
+
+    .layoutnav,
+    .innerSectionsContent {
+        margin-bottom: 60px;
+    }
+
+    .unerlineLInk:hover .firstArrow,
+    .unerlineLInk:hover .secondArrow,
+    .footer_newsletter:hover .secondArrow,
+    .followUsFooter li:hover .secondArrow,
+    .footer_newsletter:hover .firstArrow,
+    .followUsFooter li:hover .firstArrow {
+        transform: translateY(-20px);
+    }
+
+    .followarrowUplink,
+    .arrowUplink {
+        top: -2px;
+    }
+
+    .ClientReview {
+        gap: 20px;
+        padding: 45px 30px;
+    }
+
+    .mainvideoBanner,
+    .footerHeading {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .navLinksList {
+        gap: 40px;
+    }
+
+    .logoImg img {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+
+    .ourServices {
+        margin-bottom: 100px;
+    }
+
+    .max-width,
+    .ourServices {
+        width: min(800px, 100%);
+    }
+
+    .Banner-headingText-Grid3,
+    .Banner-headingText {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer_copyRight {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logoImg img {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+
+    .leftcodeContent,
+    .rightcodeContent {
+        padding: 40px 0px;
+    }
+
+    .innerSnippetcontent {
+        padding: 0 30px;
+    }
+
+    .rightlanguagesTabs .tab {
+        padding-left: 40px;
+        margin-left: -40px;
+    }
+
+    .leftlanguagesTabs .tab {
+        margin-right: -40px;
+        padding-right: 40px;
+    }
+
+    .Banner-headingText-Grid3 {
+        gap: 40px;
+    }
+
+    .innerServices {
+        padding: 40px 0;
+    }
+
+    .snippet {
+        gap: 20px;
+    }
+
+    .code-snippets {
+        margin: 50px auto 60px;
+    }
+
+    .upperClientSlide {
+        padding: 0 5px;
+    }
+
+    .shadeImageinClientReview {
+        top: 30px;
+        left: 20px;
+    }
+
+    .h2,
+    .headingHolo {
+        font-size: 60px;
+    }
+
+    .h3 {
+        font-size: 38px;
+    }
+
+    .h4 {
+        font-size: 35px;
+    }
+
+    .newsletter-MainHeading {
+        font-size: 20px;
+    }
+
+    .animation-btn a {
+        padding: 7.467px 24.533px;
+    }
+
+    .footer_content,
+    footer .navigations .nav li,
+    .footer_copyRight li,
+    .News_Letter_Input,
+    .unerlineLInk,
+    p.paragraph {
+        font-size: 13px;
+    }
+
+    .footer-heading,
+    .footer_newsletter label,
+    .rightlanguagesTabs .tab,
+    .leftlanguagesTabs .tab,
+    .navLink a,
+    .animation-btn a,
+    .layoutnav h4 {
+        font-size: 14px;
+    }
+
+    .smallHeadingText,
+    .mainReview,
+    .smallHeadingText {
+        font-size: 16px;
+    }
+
+    .upArrowScroll,
+    .downArrowScroll {
+        padding: 10px;
+    }
+
+    .ArrowScroll {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .upArrowScroll,
+    .downArrowScroll {
+        transform: translateY(-42px);
+    }
+
+    .layoutnav,
+    .innerSectionsContent {
+        margin-bottom: 40px;
+    }
+
+    .snippet h5 {
+        font-size: 18px;
+    }
+
+    .footer_copyRight li {
+        font-size: 10px;
+    }
+
+    .navigations {
+        width: min(600px, 100%);
+    }
+
+    .newsletter {
+        max-width: 300px;
+    }
+
+    .News_Letter_Input {
+        padding: 12px 0;
+    }
+
+    .ClientReview {
+        gap: 10px;
+        padding: 30px 20px;
+    }
+
+    .mainvideoBanner,
+    .footerHeading {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .navLinksList {
+        gap: 30px;
+    }
+
+    .logoImg img {
+        width: 100px;
+    }
+
+    .headerDiv {
+        padding: 30px 0;
+    }
+
+    .clientimg img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .innerServices .paragraph {
+        padding-top: 0;
+    }
+
+    .grid-containerparalex {
+        padding: 40px 20px;
+    }
+
+    .Banner-headingText-Grid3 {
+        gap: 30px;
+    }
+
+    .innerServices:last-child {
+        border-bottom: 0px;
+    }
+
+    .innerServices {
+        padding: 30px 0;
+    }
+
+    .leftcodeContent,
+    .rightcodeContent {
+        padding: 40px 0px;
+    }
+
+    .innerSnippetcontent {
+        padding: 0 30px;
+    }
+
+    .rightlanguagesTabs .tab {
+        padding-left: 40px;
+        margin-left: -40px;
+    }
+
+    .leftlanguagesTabs .tab {
+        margin-right: -40px;
+        padding-right: 40px;
+    }
+
+    .innerSectionsContent {
+        width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .h2,
+    .headingHolo {
+        font-size: 50px;
+    }
+
+    .h3 {
+        font-size: 30px;
+    }
+
+    .h4 {
+        font-size: 26px;
+    }
+
+    .newsletter-MainHeading {
+        font-size: 20px;
+    }
+
+    .ourServices {
+        margin-bottom: 60px;
+    }
+
+    .navigations {
+        width: min(500px, 100%);
+    }
+
+    .footer-acher {
+        border-bottom-width: 3px;
+    }
+
+    .weoiflkjdnc {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .h2,
+    .headingHolo {
+        font-size: 48px;
+    }
+
+    .Banner-headingText-Grid3 {
+        gap: 20px;
+    }
+
+    .code-snippets {
+        grid-template-columns: 1fr;
+        margin-top: 70px;
+        gap: 70px;
+    }
+
+    .innerServices {
+        grid-template-columns: auto auto;
+        gap: 30px;
+
+    }
+
+    p.paragraph.opacityHalf.listStyleBetween {
+        gap: 10px;
+    }
+
+    .nich {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .snippet {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr 100px;
+    }
+
+    .leftcodeContent,
+    .rightcodeContent {
+        padding: 30px 0px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .innerSnippetcontent {
+        padding: 0 20px;
+    }
+
+    .snippet h5 {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .rightlanguagesTabs,
+    .leftlanguagesTabs {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .rightlanguagesTabs .tab {
+        padding-left: 20px;
+        margin-left: -20px;
+    }
+
+    .leftlanguagesTabs .tab {
+        margin-right: -20px;
+        padding-right: 20px;
+    }
+
+    .innerPolicy.aboutUs svg {
+        width: 30px;
+    }
+
+    form .aboutUsPPP {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .innerPolicy.aboutUs .aboutUsPPP {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .emptyDiv {
+        display: block;
+    }
+
+    .leftcodeContent,
+    .rightcodeContent {
+        grid-column: span 2;
+    }
+
+    .snippet.flex-reverse .rightlanguagesTabs {
+        order: 4;
+    }
+
+    .ourWorkHomepageSection .keen-slider {
+        height: 400px;
+    }
+
+    .max-width {
+        width: min(550px, 100%);
+    }
+
+    .ourServices {
+        margin-bottom: 40px;
+        width: min(550px, 100%);
+    }
+
+    .clientSlider {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .textwithicon {
+        gap: 10px;
+    }
+
+    .mainFooterMenu {
+        flex-wrap: wrap;
+        padding: 40px 0;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .newsletter {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .navigations {
+        width: min(600px, 100%);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .paralexGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .h4 {
+        font-size: 19px;
+    }
+
+    .grid-containerparalex {
+        padding: 45px 0;
+    }
+
+    .mobileNav {
+        display: grid;
+        grid-template-columns: 40px 40px;
+        width: 40px;
+        position: relative;
+        overflow: hidden;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .mobileNav img {
+        transition: 0.2s;
+    }
+
+    .mobileNav.close img {
+        transform: translateX(-40px);
+    }
+
+    .logoImg img {
+        width: 120px;
+    }
+
+    .footer_content,
+    footer .navigations .nav li,
+    .footer_copyRight li,
+    .News_Letter_Input,
+    .unerlineLInk,
+    p.paragraph {
+        font-size: 14px;
+    }
+
+    .footer-heading,
+    .footer_newsletter label,
+    .rightlanguagesTabs .tab,
+    .leftlanguagesTabs .tab,
+    .navLink a,
+    .animation-btn a,
+    .layoutnav h4 {
+        font-size: 15px;
+    }
+
+    .mobileNav.open img {
+        transform: translateX(0px);
+    }
+
+    .HeaderHeight {
+        height: 100px;
+    }
+
+    .bcShade {
+        position: absolute;
+        right: -100px;
+        width: 500px;
+        height: 500px;
+        top: 100px;
+        z-index: 1;
+    }
+
+    .mobnavLinksList {
+        margin-top: 40px;
+        display: grid;
+        gap: 30px;
+        color: white;
+        list-style: none;
+    }
+
+    .mobnavLink a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .followUsMobile .followarrowUplink {
+        color: white !important;
+        opacity: 1;
+    }
+
+
+    .followUsMobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 40px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        list-style-type: none;
+    }
+
+    .followUsMobile li {
+        position: relative;
+        padding-right: 30px;
+        width: fit-content;
+    }
+
+    body:has(.mobileMenu.open) {
+        overflow-y: hidden;
+    }
+
+    .mobileMenu.close {
+        transform: translateX(-100%);
+    }
+
+    .mobileMenu.open {
+        transform: translateX(0%);
+    }
+
+    .followUsMobile li:hover .secondArrow,
+    .followUsMobile li:hover .firstArrow {
+        transform: translateY(-20px);
+    }
+
+    .grid-2 {
+        gap: 20px;
+    }
+
+    .Banner-headingText-Grid3 .h2 {
+        text-align: right;
+    }
+
+    .Banner-headingText-Grid3 {
+        gap: 5px;
+        grid-template-columns: 2fr 4fr;
+        row-gap: 20px;
+        column-gap: 10px;
+        /* gap: 30px; */
+    }
+
+    .textwithicon {
+        grid-column: span 2;
+        justify-content: center;
+    }
+
+    .emptyDiv {
+        display: none;
+    }
+
+    .snippet {
+        position: relative;
+        grid-template-columns: 100px 1fr 100px;
+    }
+
+    .h2,
+    .headingHolo {
+        font-size: 40px;
+    }
+
+
+    .navigations .nav {
+        gap: 20px;
+    }
+
+    footer .navigations .nav ul {
+        gap: 10px;
+    }
+
+    .navLinksList {
+        display: none;
+    }
+
+    .stylePage {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .innerPolicy.aboutUs svg {
+        width: 28px;
+    }
+
+    form .aboutUsPPP {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .innerPolicy.aboutUs .aboutUsPPP {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .hideMobile,
+    .innerBCRE .headingHolo,
+    .innerBCRE .paragraph,
+    .desktop {
+        display: none !important;
+    }
+
+    .bannerHeadings .headingBCClip {
+        text-align: left;
+    }
+
+    .textwithicon {
+        display: none;
+    }
+
+    .Banner-headingText-Grid3 {
+        grid-template-columns: 1fr;
+    }
+
+    .Banner-headingText-Grid3 .h2 {
+        text-align: left;
+    }
+
+    .Banner-headingText {
+        flex-direction: column-reverse;
+        align-items: normal;
+    }
+
+    .Banner-headingText .headingFirst.h2 {
+        text-align: left;
+    }
+
+    .Banner-headingText .headingHolo {
+        text-align: right;
+    }
+
+    .innerPolicy {
+        grid-template-columns: 1fr 6fr;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .h2,
+    .headingHolo {
+        font-size: 40px;
+    }
+
+    .navigations {
+        grid-template-columns: 1fr 1fr;
+        max-width: 400px;
+    }
+
+    .footerHeading {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px 0;
+    }
+
+    .mainvideoBanner,
+    .footerHeading {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .Banner-headingText,
+    .Banner-headingText-Grid3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navigations .nav {
+        gap: 10px;
+    }
+
+    .footer_copyRight {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer_content {
+        font-weight: bold;
+        opacity: 0.6;
+    }
+
+    .copyright ul {
+        gap: 15px;
+    }
+
+    .h4 {
+        font-size: 30px;
+    }
+}

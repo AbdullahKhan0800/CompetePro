@@ -6,6 +6,7 @@
 }
 
 .member {
+    background: white;
     width: min(90%, 365px);
     display: flex;
     flex-direction: column;

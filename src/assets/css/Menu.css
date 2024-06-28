@@ -97,21 +97,6 @@
 
 /* togle menu fulll screeen */
 
-aside {
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, #101118 0%, #171a8b 100%);
-    transform: translateX(-100%);
-    transition: 1s;
-}
-
 .open {
     transform: translateX(0%);
 }
@@ -173,12 +158,6 @@ aside ul li:hover {
     aside ul {
         font-size: 2.5rem;
     }
-
-    aside {
-        justify-content: right;
-        padding-right: 4vw;
-    }
-
 }
 
 @media screen and (max-width:730px) {
@@ -204,16 +183,6 @@ aside ul li:hover {
         top: 8px;
         margin-bottom: 0px;
         left: 18px;
-    }
-
-    .menu-class {
-        margin-bottom: 0px;
-        right: 18px;
-    }
-
-    aside {
-        justify-content: center;
-        padding: 0 !important;
     }
 
     aside ul {

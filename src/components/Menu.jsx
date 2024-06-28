@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react'
-import LogoBlue from '../../assets/Images/CPBlue.png'
-import LogoWhite from '../../assets/Images/CPWhite.png'
+import LogoBlue from '../assets/Images/CPBlue.png'
+import LogoWhite from '../assets/Images/CPWhite.png'
 import { NavLink } from 'react-router-dom';
-import '../../assets/css/Menu.css'
+import '../assets/css/Menu.css'
 
 function Menu({ heroBanner }) {
     const [togle, settoggle] = useState(false);
@@ -21,8 +21,8 @@ function Menu({ heroBanner }) {
     }
 
     return (
-        <div className='h-screen'>
-            <nav className='grid grid-rows-3 h-full relative z-10 px-6'>
+        <menu className='h-screen fixed top-0 left-0 z-50'>
+            <nav className='grid grid-rows-3 h-full px-6 relative z-40'>
                 <div className=' relative w-[80px] h-auto mt-6'>
                     {
                         heroBanner === true ? <>
@@ -34,7 +34,7 @@ function Menu({ heroBanner }) {
                             </>
                     }
                 </div>
-                <div className='menu-class flex items-center justify-center' >
+                <div className='flex items-center justify-center' >
                     <div onClick={() => { settoggle(prev => !prev) }} className='flex flex-col items-center justify-center gap-2 cursor-pointer'>
                         {
                             heroBanner === true ? <>
@@ -45,7 +45,7 @@ function Menu({ heroBanner }) {
                                     <span className={'bg-white'}></span>
                                 </div>
                             </> : <>
-                                <span className={`m-0 hamburger-menu-text font-Euro ${togle ? 'text-white' : 'text-[#1c72b8]'}`}>MENU</span>
+                                <span className={`m-0 hamburger-menu-text font-Euro transition-all duration-500 ${togle ? 'text-white' : 'text-[#1c72b8]'}`}>MENU</span>
                                 <div className={`m-0 relative transition-all duration-500  ${togle ? 'open -left-1' : ''}`} id='nav-icon4'>
                                     <span className={togle ? 'bg-white' : 'bg-[#1c72b8]'}></span>
                                     <span className={togle ? 'bg-white' : 'bg-[#1c72b8]'}></span>
@@ -57,7 +57,7 @@ function Menu({ heroBanner }) {
                 </div>
                 <div></div>
             </nav>
-            <aside className={togle ? 'open' : ''}>
+            <aside className={`fixed top-0 w-full h-screen text-center flex justify-center items-center bg-[linear-gradient(to_bottom_right,_#101118_0%,_#171a8b_100%)] -translate-x-full transition-all duration-500 z-30 ${togle ? 'open' : ''}`}>
                 <ul>
                     <NavLink onClick={() => { settoggle(prev => !prev) }} to="/" className={({ isActive }) => isActive ? "active-link" : ''}>
                         <li data-value="Compete Pro" onMouseEnter={(e) => { setHoverState(e) }}>Home</li>
@@ -74,7 +74,7 @@ function Menu({ heroBanner }) {
                 </ul>
                 <h2 className='thisisbackofthepoly' ref={hoverElement}>{hoverText}</h2>
             </aside>
-        </div>
+        </menu>
     )
 }
 

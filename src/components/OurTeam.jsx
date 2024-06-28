@@ -31,7 +31,7 @@ export const OURTEAM = () => {
                                 <button className='btnarray' onClick={() => {
                                     changeContent(phone)
                                 }}>Profile</button>
-                                <a href={phone.linkedin} target="_blank"><GrLinkedinOption /></a>
+                                <a href={phone.linkedin} target="_blank" rel="noreferrer"><GrLinkedinOption /></a>
                             </div>
                         </div>
                     )

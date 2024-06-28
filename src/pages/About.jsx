@@ -1,8 +1,8 @@
 import React from 'react'
-import '../../assets/css/aboutus.css'
-import BestCompony from '../../components/BestCompony'
-import { Director } from '../../components/Director'
-import { OURTEAM } from '../../components/OurTeam'
+import '../assets/css/aboutus.css'
+import BestCompony from '../components/BestCompony'
+import { Director } from '../components/Director'
+import { OURTEAM } from '../components/OurTeam'
 
 function About() {
   return (

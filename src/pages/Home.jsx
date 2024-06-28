@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 function Home() {
     return (
-        <div className='px-4 flex h-screen'>
-            <div className='flex flex-col'>
+        <div className='container'>
+            <div className='flex flex-col px-4 h-screen'>
                 <h2 className='font-black text-left mb-3 text-6xl mt-20'>Welcome to <span className='font-black text-[#1c72b8]'>Compete Programming</span> Solutions</h2>
                 <h3 className=" text-2xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Lets quickly get to the information you require.</h3>
                 <div className='flex w-full justify-start items-end h-full border-b-2 py-4'>
