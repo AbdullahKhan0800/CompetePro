@@ -5,7 +5,6 @@ import { GrLinkedinOption } from 'react-icons/gr'
 import { GiCrossMark } from 'react-icons/gi'
 import teamData from '../data/TeamData'
 
-
 export const OURTEAM = () => {
     const [openModal, setOpenModal] = useState([])
     const [popuptoggle, setpopuptoggle] = useState(false)
