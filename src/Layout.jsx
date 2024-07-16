@@ -18,7 +18,7 @@ function Layout() {
             <Hero setexplore={setexplore} explore={explore} />
             {explore == false &&
                 <>
-                    {/* <SubParticles /> */}
+                    <SubParticles />
                     <main className='w-full h-screen'>
                         <Scroll />
                         <div>
