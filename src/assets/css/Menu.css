@@ -1,6 +1,6 @@
 /* All menu css here */
 .Logo {
-    width: 80px;
+    width: 75px;
     height: auto;
 }
 
@@ -13,10 +13,9 @@
 /* Icon 1 */
 
 #nav-icon4 {
-    width: 47px;
+    width: 45px;
     height: 45px;
     position: relative;
-    margin: 50px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -31,7 +30,7 @@
     display: block;
     transition: all 0.3s;
     position: absolute;
-    height: 2px;
+    height: 1px;
     width: 100%;
     opacity: 1;
     left: 0;
@@ -58,6 +57,7 @@
 
 #nav-icon4 span:nth-child(2) {
     top: 7px;
+    height: 2px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
@@ -77,8 +77,9 @@
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: -3px;
+    top: -2px;
     left: 8px;
+    height: 2px;
 }
 
 #nav-icon4.open span:nth-child(2) {
@@ -93,6 +94,7 @@
     transform: rotate(-45deg);
     top: 30px;
     left: 8px;
+    height: 2px;
 }
 
 /* togle menu fulll screeen */
@@ -104,17 +106,21 @@
 aside ul {
     transition: 1s;
     display: flex;
-    color: white;
     gap: 5rem;
     list-style: none;
-    font-size: 3.5rem;
 }
 
-aside ul li:hover {
+aside ul li a {
+    color: white;
+    font-size: 30px;
+    font-family: 'EurostileExt' !important;
+}
+
+aside ul li a:hover {
     color: #1c72b8;
 }
 
-.active-link li {
+.active-link{
     color: #1c72b8 !important;
 }
 
@@ -123,10 +129,9 @@ aside ul li:hover {
     font-size: 9vw;
     font-family: POLYA !important;
     font-weight: lighter;
-    top: 41%;
+    top: 31%;
     z-index: -1;
     color: #1c72b8;
-    letter-spacing: 2vw;
     transition: all 1s;
 }
 
@@ -145,18 +150,6 @@ aside ul li:hover {
 
     100% {
         opacity: 1;
-    }
-}
-
-@media screen and (max-width:1138px) {
-    aside ul {
-        font-size: 3rem;
-    }
-}
-
-@media screen and (max-width:884px) {
-    aside ul {
-        font-size: 2.5rem;
     }
 }
 

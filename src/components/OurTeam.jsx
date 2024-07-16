@@ -13,21 +13,19 @@ export const OURTEAM = () => {
         setpopuptoggle(!popuptoggle)
     }
     return (
-        <>
-            <div className='backfont'>
-                <h3 className='stylishfont'>Our Team</h3>
-            </div>
+        <div className='bg-gradiant container pb-14'>
+            <h3 className='text-center pt-14 pb-7 text-white'>Our Team</h3>
             <div className='ourteam-container'>
                 {teamData.map((phone, index) => {
                     return (
                         <div className='member' >
                             <img src={phone.img} alt="team member" key={index} />
                             <p className='spcial'>{phone.special}</p>
-                            <h4>{phone.name}</h4>
+                            <h4 className='font-Euro'>{phone.name}</h4>
                             <p>{phone.title}</p>
                             <div>
                                 <span></span>
-                                <button className='btnarray' onClick={() => {
+                                <button className=' secondary-btn cursor-none' onClick={() => {
                                     changeContent(phone)
                                 }}>Profile</button>
                                 <a href={phone.linkedin} target="_blank" rel="noreferrer"><GrLinkedinOption /></a>
@@ -56,6 +54,6 @@ export const OURTEAM = () => {
                     </div>
                 </div>
             )}
-        </>
+        </div>
     )
 };

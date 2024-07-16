@@ -1,12 +1,11 @@
 .thisisimageaboutwhitesuide {
-    width: min(90%, 1011px);
     display: flex;
+    width: min(1200px, 100%);
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    gap: 50px;
+    gap: 30px;
     flex-direction: row-reverse;
-    margin-bottom: 35px;
 }
 
 
@@ -51,27 +50,8 @@
 }
 
 /* best comany component */
-.main-bestcompany {
-    width: min(90%, 993px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.center-htwo-best {
-    font-size: 36px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #1c72b8;
-}
 
 .best-paragraph {
-    color: #7c7d7d;
-    font-size: 20px;
-    line-height: 1.35;
     padding: 0 70px;
     text-align: center;
     margin-bottom: 95px;
@@ -81,30 +61,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 64px;
-}
-
-.singlediv-best {
-    background-color: #1c72b8;    
-    border-radius: 54px;
-    text-align: center;
-    padding: 71px 38px 30px;
-    position: relative;
-    z-index: -1;
-}
-
-.singlediv-best h3 {
-    color: #ffff;
-    font-size: 25px;
-    font-weight: 700;
-    margin-bottom: 21px;
-    letter-spacing: -1px;
-    margin-top: 15px;
-}
-
-.singlediv-best p {
-    color: #ffff;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 .singlegrid-best img {

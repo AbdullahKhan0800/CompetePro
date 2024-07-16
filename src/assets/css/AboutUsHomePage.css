@@ -1,0 +1,41 @@
+.innerSectionsContent {
+    width: min(933px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 56px;
+}
+
+.unerlineLInk {
+    color: #1c72b8;
+}
+
+.firstArrow,
+.secondArrow {
+    width: 22px;
+    height: 22px;
+}
+
+.unerlineLInk:hover .firstArrow {
+    transform: translateY(-22px);
+}
+
+
+.unerlineLInk:hover .secondArrow {
+    transform: translateY(-22px);
+}
+
+.arrowUplink {
+    position: absolute;
+    right: 3px;
+    top: -3px;
+    font-size: 30px;
+    height: 22px;
+    overflow: hidden;
+    width: 22px;
+}
+
+.arrowUplink>div {
+    display: flex;
+    transition: 0.3s all;
+}

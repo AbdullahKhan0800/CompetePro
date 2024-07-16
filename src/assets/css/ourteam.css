@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
 }
-
+/* 
 .member button {
     color: #1c72b8;
     border: 1px solid #1c72b8;
@@ -52,7 +52,7 @@
 .member button:hover {
     color: #fff;
     background-color: #1c72b8;
-}
+} */
 
 .spcial {
     color: #7c7d7d;
@@ -79,22 +79,9 @@
 }
 
 @media screen and (max-width:756px) {
-    .center-htwo-best {
-        font-size: 25px;
-    }
-
     .directeor {
         font-size: 26px;
     }
-
-    .Abdullaksdf {
-        font-size: 30px;
-    }
-
-    .best-paragraph {
-        padding: 0;
-    }
-
     .ourteam-container {
         grid-template-columns: auto;
         grid-template-rows: repeat(6, auto);
@@ -102,14 +89,5 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-    }
-
-    .main-div-best {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-    }
-
-    .main-div-best {
-        gap: 89px;
     }
 }

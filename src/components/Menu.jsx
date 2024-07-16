@@ -22,7 +22,7 @@ function Menu({ heroBanner }) {
 
     return (
         <menu className='h-screen fixed top-0 left-0 z-50'>
-            <nav className='grid grid-rows-3 h-full px-6 relative z-40'>
+            <nav className='grid grid-rows-3 h-full px-3 relative z-40'>
                 <div className=' relative w-[80px] h-auto mt-6'>
                     {
                         heroBanner === true ? <>
@@ -59,18 +59,26 @@ function Menu({ heroBanner }) {
             </nav>
             <aside className={`fixed top-0 w-full h-screen text-center flex justify-center items-center bg-[linear-gradient(to_bottom_right,_#101118_0%,_#171a8b_100%)] -translate-x-full transition-all duration-500 z-30 ${togle ? 'open' : ''}`}>
                 <ul>
-                    <NavLink onClick={() => { settoggle(prev => !prev) }} to="/" className={({ isActive }) => isActive ? "active-link" : ''}>
-                        <li data-value="Compete Pro" onMouseEnter={(e) => { setHoverState(e) }}>Home</li>
-                    </NavLink>
-                    <NavLink onClick={() => { settoggle(prev => !prev) }} to="/about" className={({ isActive }) => isActive ? "active-link" : ''}>
-                        <li data-value="About Us" onMouseEnter={(e) => { setHoverState(e) }}>About Us</li>
-                    </NavLink>
-                    <NavLink onClick={() => { settoggle(prev => !prev) }} to="/services" className={({ isActive }) => isActive ? "active-link" : ''}>
-                        <li data-value="Our Services" onMouseEnter={(e) => { setHoverState(e) }}>Services</li>
-                    </NavLink>
-                    <NavLink onClick={() => { settoggle(prev => !prev) }} to="/contact" className={({ isActive }) => isActive ? "active-link" : ''}>
-                        <li data-value="Contact Us" onMouseEnter={(e) => { setHoverState(e) }}>Contact</li>
-                    </NavLink>
+                    <li data-value="Compete Pro" onMouseEnter={(e) => { setHoverState(e) }}>
+                        <NavLink onClick={() => { settoggle(prev => !prev) }} to="/" className={({ isActive }) => isActive ? "active-link" : ''}>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li data-value="About Us" onMouseEnter={(e) => { setHoverState(e) }}>
+                        <NavLink onClick={() => { settoggle(prev => !prev) }} to="/about-us" className={({ isActive }) => isActive ? "active-link" : ''}>
+                            About Us
+                        </NavLink>
+                    </li>
+                    <li data-value="Our Services" onMouseEnter={(e) => { setHoverState(e) }}>
+                        <NavLink onClick={() => { settoggle(prev => !prev) }} to="/services" className={({ isActive }) => isActive ? "active-link" : ''}>
+                            Services
+                        </NavLink>
+                    </li>
+                    <li data-value="Contact Us" onMouseEnter={(e) => { setHoverState(e) }}>
+                        <NavLink onClick={() => { settoggle(prev => !prev) }} to="/contact" className={({ isActive }) => isActive ? "active-link" : ''}>
+                            Contact
+                        </NavLink>
+                    </li>
                 </ul>
                 <h2 className='thisisbackofthepoly' ref={hoverElement}>{hoverText}</h2>
             </aside>
