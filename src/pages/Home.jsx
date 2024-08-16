@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import AboutUsHomepage from '../components/AboutUsHomePage'
 import { ParallaxScrollDemo } from '../components/parallaxGridScroll'
 import '../assets/css/Home.css'
-import CodeExample from '../components/CodeExample'
 
 function Home() {
     return (

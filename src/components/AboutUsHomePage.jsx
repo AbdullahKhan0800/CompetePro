@@ -4,7 +4,7 @@ import '../assets/css/AboutUsHomePage.css'
 export default function AboutUsHomepage() {
     return (
         <div className="container">
-            <div className="innerSectionsContent py-20">
+            <div className="grid gap-14 m-auto  py-20">
                 <div className="grid gap-3">
                     <h3 className="secondary_heading">
                         We help our clients
