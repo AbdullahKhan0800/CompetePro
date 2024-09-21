@@ -14,10 +14,10 @@ function CodeExample() {
                 </h3>
             </div>
             <div className="grid grid-cols-2 overflow-hidden">
-                <div data-aos="fade-right">
+                <div>
                     <CodeSnippets content={Frontend} position="left" />
                 </div>
-                <div data-aos="fade-left">
+                <div>
                     <CodeSnippets content={Backend} position="right" />
                 </div>
             </div>

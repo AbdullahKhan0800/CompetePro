@@ -14,7 +14,9 @@
     font-style: normal;
     font-weight: 600;
 }
-
+.navigations{
+    grid-template-columns: 2fr 1fr 1fr;
+}
 .navigations .nav {
     display: flex;
     flex-direction: column;

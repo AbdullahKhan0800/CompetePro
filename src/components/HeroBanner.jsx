@@ -1,5 +1,3 @@
-import { Link, animateScroll as scroll } from "react-scroll";
-import { HiOutlineArrowDown } from "react-icons/hi2";
 import { NavLink } from "react-router-dom";
 
 export default function HeroBanner() {
@@ -30,20 +28,7 @@ export default function HeroBanner() {
                         Leading Agency
                     </h2>
                     <div className="flex justify-center items-center gap-3">
-                        <p className='paragraph text-white'>Watch Video</p>
-                        <Link
-                            activeClass="active"
-                            to="VideoHome"
-                            spy={true}
-                            smooth={true}
-                            offset={110}
-                            duration={500}
-                        >
-                            <div className='ArrowScroll'>
-                                <div className="upArrowScroll"><HiOutlineArrowDown /></div>
-                                <div className="downArrowScroll"><HiOutlineArrowDown /></div>
-                            </div>
-                        </Link>
+                       <img src="/shopify_glyph.png" width="100px" alt="" />
                     </div>
                 </div>
             </div>

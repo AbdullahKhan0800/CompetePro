@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { MdArrowOutward } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import '../assets/css/footer.css'
 
 function Footer() {
@@ -8,9 +8,9 @@ function Footer() {
     return (
         <footer className="container">
             <div className="border-black border-b border-solid border-opacity-20 mt-10">
-                <div className="newsletter container flex text-center justify-center items-center flex-col gap-5" data-aos="fade-up">
+                <div className="newsletter container flex text-center justify-center items-center flex-col gap-5">
                     <h4 className=" text-[#1c72b8]">To keep up to date with all the latest news, advice and jobs</h4>
-                    <p>Please sign up to the bigfolio email newsletter.</p>
+                    <p>Please sign up to the Compete Pro email newsletter.</p>
                     <div className="footer_newsletter">
                         <input type="text" id="newsletteremail" value={inputvalue} className="News_Letter_Input" onChange={(e) => {
                             setinputvalue(e.target.value)
@@ -26,30 +26,22 @@ function Footer() {
                         <label htmlFor="newsletteremail" className={`labelEmailNewsletter${inputvalue !== '' ? " News_letter_value" : ""}`}>ENTER EMAIL</label>
                     </div>
                 </div>
-                <div className="navigations grid grid-cols-4 py-16 gap-10" data-aos="fade-up">
-                    <div className="nav border-black pt-10 border-t border-solid border-opacity-20">
-                        <div className="footer-heading">Legal</div>
-                        <ul>
-                            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-                            <li>Terms of Use</li>
-                            <li>Do not sell my data</li>
-                        </ul>
-                    </div>
+                <div className="navigations grid py-16 gap-10">
+
                     <div className="nav border-black pt-10 border-t border-solid border-opacity-20">
                         <div className="footer-heading">Company</div>
-                        <ul>
-                            <li><Link to="/about-us">About us</Link></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#our-work">Our work</a></li>
-                            <li>Careers</li>
-                        </ul>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, ipsam, beatae non rerum Lorem ipsum dolor sit amet.
+                        </p>
                     </div>
                     <div className="nav border-black pt-10 border-t border-solid border-opacity-20">
                         <div className="footer-heading">Resources</div>
                         <ul>
-                            <li>Blog</li>
-                            <li><a href="#our-customer">Customer stories</a></li>
-                            <li>Contact us</li>
+                            <li><NavLink to="/">Home</NavLink></li>
+                            <li><NavLink to="/about-us">About Us</NavLink></li>
+                            <li><NavLink to="/services">Our Services</NavLink></li>
+                            <li><NavLink to="/contact-us">Contact us</NavLink></li>
+                            <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
                         </ul>
                     </div>
                     <div className="nav border-black pt-10 border-t border-solid border-opacity-20">
@@ -65,7 +57,7 @@ function Footer() {
                                     </div>
                                 </div></a>
                             </li>
-                            <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/bigfolio">LinkedIn
+                            <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/abdullah-khan-66790822b/">LinkedIn
                                 <div className="followarrowUplink">
                                     <div className="firstArrow">
                                         <MdArrowOutward />
@@ -74,7 +66,7 @@ function Footer() {
                                         <MdArrowOutward />
                                     </div>
                                 </div></a></li>
-                            <li><a href="https://www.facebook.com/bigfolio.co" target="_blank" rel="noreferrer">Facebook
+                            <li><a href="https://www.facebook.com/biatemper0800/" target="_blank" rel="noreferrer">Facebook
                                 <div className="followarrowUplink">
                                     <div className="firstArrow">
                                         <MdArrowOutward />
@@ -87,7 +79,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div >
             <hr />
             <div className="footer_copyRight">
                 <div className="copyright">
@@ -103,7 +95,7 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }
 

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../assets/css/Home.css';
 import MainParticles from './particles/MainParticles';
 import { TypewriterEffect } from './ui/typewriter-effect';
@@ -32,7 +31,7 @@ function Hero({ explore, setexplore }) {
     ]
 
     return (
-        <div className='w-full absolute z-40 transition-all duration-500' style={explore == false ? { transform: 'translateY(-100%)' } : { transform: 'translateY(0%)' }}>
+        <div className='w-full absolute z-40 transition-all duration-500' style={explore === false ? { transform: 'translateY(-100%)' } : { transform: 'translateY(0%)' }}>
             <MainParticles />
             <div className='w-full justify-center h-screen flex flex-col container'>
                 <h2 className='primary_heading text-[#1c72b8] mb-2'>adaptive</h2>

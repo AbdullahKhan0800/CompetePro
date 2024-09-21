@@ -1,70 +1,70 @@
 import React from 'react'
 import HeroBanner from '../components/HeroBanner'
 import { useKeenSlider } from "keen-slider/react"
-import imageOne from "../assets/Images/Rectangle 3.png"
-import imageTwo from "../assets/Images/Rectangle 4.png"
-import imageThree from "../assets/Images/Rectangle 5.png"
-import imageFour from "../assets/Images/Rectangle 6.png"
 // import CodeExample from '../components/CodeExample'
 import "keen-slider/keen-slider.min.css"
 
 function Services() {
-  const WheelControls = (slider) => {
-    let touchTimeout
-    let position
-    let wheelActive
-
-    function dispatch(e, name) {
-      position.x -= e.deltaX
-      position.y -= e.deltaY
-      slider.container.dispatchEvent(
-        new CustomEvent(name, {
-          detail: {
-            x: position.x,
-            y: position.x,
-          },
-        })
-      )
-    }
-
-    function wheelStart(e) {
-      position = {
-        x: e.pageX,
-        y: e.pageY,
-      }
-      dispatch(e, "ksDragStart")
-    }
-
-    function wheel(e) {
-      dispatch(e, "ksDrag")
-    }
-
-    function wheelEnd(e) {
-      dispatch(e, "ksDragEnd")
-    }
-
-    function eventWheel(e) {
-      if (e.deltaX) {
-        e.preventDefault()
-        if (!wheelActive) {
-          wheelStart(e)
-          wheelActive = true
-        }
-        wheel(e)
-        clearTimeout(touchTimeout)
-        touchTimeout = setTimeout(() => {
-          wheelActive = false
-          wheelEnd(e)
-        }, 50)
-      }
-    }
-
-    slider.on("created", () => {
-      slider.container.addEventListener("wheel", eventWheel, {
-        passive: false,
-      })
-    })
+  let arraySlider = [];
+  for (let index = 1; index < 18; index++) {
+    arraySlider.push(`/portfolioImages/img${index}.png`);
   }
+  // const WheelControls = (slider) => {
+  //   let touchTimeout
+  //   let position
+  //   let wheelActive
+
+  //   function dispatch(e, name) {
+  //     position.x -= e.deltaX
+  //     position.y -= e.deltaY
+  //     slider.container.dispatchEvent(
+  //       new CustomEvent(name, {
+  //         detail: {
+  //           x: position.x,
+  //           y: position.x,
+  //         },
+  //       })
+  //     )
+  //   }
+
+  //   function wheelStart(e) {
+  //     position = {
+  //       x: e.pageX,
+  //       y: e.pageY,
+  //     }
+  //     dispatch(e, "ksDragStart")
+  //   }
+
+  //   function wheel(e) {
+  //     dispatch(e, "ksDrag")
+  //   }
+
+  //   function wheelEnd(e) {
+  //     dispatch(e, "ksDragEnd")
+  //   }
+
+  //   function eventWheel(e) {
+  //     if (e.deltaX) {
+  //       e.preventDefault()
+  //       if (!wheelActive) {
+  //         wheelStart(e)
+  //         wheelActive = true
+  //       }
+  //       wheel(e)
+  //       clearTimeout(touchTimeout)
+  //       touchTimeout = setTimeout(() => {
+  //         wheelActive = false
+  //         wheelEnd(e)
+  //       }, 50)
+  //     }
+  //   }
+
+  //   slider.on("created", () => {
+  //     slider.container.addEventListener("wheel", eventWheel, {
+  //       passive: false,
+  //     })
+  //   })
+  // }
   const [sliderRef] = useKeenSlider(
     {
       breakpoints: {
@@ -83,8 +83,8 @@ function Services() {
       },
       mode: "free-snap",
       loop: true
-    },
-    [WheelControls]
+    }
+    // [WheelControls]
   )
   const dataServices = [
     {
@@ -145,7 +145,7 @@ function Services() {
       <div className='ourServices'>
         {
           dataServices.map((value, index) => (
-            <div key={index} data-aos="fade-up" className='innerServices'>
+            <div key={index} className='innerServices'>
               <p className='paragraph opacityHalf'>{index + 1}</p>
               <div>
                 <h2 className='primary_heading font-SuisseIntl text-[#1c72b8]'>{value.name}</h2>
@@ -178,21 +178,13 @@ function Services() {
         </div>
         <div className="container">
           <div ref={sliderRef} className="keen-slider">
-            <div className="sliderSlide keen-slider__slide">
-              <img src={imageOne} alt="" />
-            </div>
-            <div className="sliderSlide keen-slider__slide">
-              <img src={imageTwo} alt="" />
-            </div>
-            <div className="sliderSlide keen-slider__slide">
-              <img src={imageThree} alt="" />
-            </div>
-            <div className="sliderSlide keen-slider__slide">
-              <img src={imageFour} alt="" />
-            </div>
-            <div className="sliderSlide keen-slider__slide">
-              <img src={imageOne} alt="" />
-            </div>
+            {
+              arraySlider.map(slide => (
+                <div className="sliderSlide keen-slider__slide">
+                  <img src={slide} alt="" />
+                </div>
+              ))
+            }
           </div>
         </div>
         {/* <CodeExample /> */}

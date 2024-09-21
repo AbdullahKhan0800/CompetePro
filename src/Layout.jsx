@@ -16,7 +16,7 @@ function Layout() {
             </div>
             <Menu heroBanner={explore} />
             <Hero setexplore={setexplore} explore={explore} />
-            {explore == false &&
+            {explore === false &&
                 <>
                     <SubParticles />
                     <main className='w-full h-screen'>

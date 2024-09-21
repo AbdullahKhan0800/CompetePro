@@ -1,10 +1,8 @@
 import { ParallaxScroll } from './ui/parallax-scroll';
-import phoneScreenSHot from '../assets/Images/phoneScreenSHot.png'
 export function ParallaxScrollDemo() {
   let array = [];
   for (let index = 1; index < 18; index++) {
-    array.push(`https://www.bigfolio.co/images/img${index}.png`);
-    // array.push(phoneScreenSHot);
+    array.push(`/portfolioImages/img${index}.png`);
   }
   return (
     <div className="container">
