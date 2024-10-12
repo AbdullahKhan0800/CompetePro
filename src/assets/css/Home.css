@@ -18,7 +18,7 @@
 .rightAlign {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     text-align: right;
-    padding-top: 25px !important;
+    padding-top: 25px;
 }
 
 .girdThreeparalex {
@@ -138,5 +138,16 @@
     }
     .grid-containerparalex {
         padding: 40px 0px;
+    }
+}
+@media screen and (max-width: 768px){
+    .girdThreeparalex{
+        gap: 10px;
+    }
+    .girdThreeparalex h5{
+        text-align: right;
+    }
+    .rightAlign{
+        padding-top: 15px;
     }
 }

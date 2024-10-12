@@ -41,6 +41,7 @@ function AnimatedCursor({
   const [dragIsVisible, setDragIsVisible] = useState(true)
   const [isActive, setIsActive] = useState(false)
   const [dragIsActive, setdragIsActive] = useState(false)
+  const [explore, setexplore] = useState(false)
   const [isActiveClickable, setIsActiveClickable] = useState(false)
   let endX = useRef(0)
   let endY = useRef(0)
@@ -75,10 +76,12 @@ function AnimatedCursor({
   const onMouseDown = useCallback(() => {
     setIsActive(true);
     setdragIsActive(true)
+    setexplore(true)
   }, [])
   const onMouseUp = useCallback(() => {
     setIsActive(false);
     setdragIsActive(false);
+    setexplore(false);
   }, [])
   const onMouseEnter = useCallback(() => {
     setIsVisible(true);
@@ -107,13 +110,21 @@ function AnimatedCursor({
       cursorOuterRef.current.innerHTML = `DRAG`
       cursorOuterRef.current.style.fontSize = `1px`
 
+    } else if (explore) {
+      cursorInnerRef.current.style.transform = `scale(${dragInnerScale})`
+      cursorOuterRef.current.style.transform = `scale(${dragOuterScale})`
+      cursorOuterRef.current.style.backgroundColor = `rgba(${dragColor},0.2)`
+      cursorOuterRef.current.style.color = `rgb(${color})`
+      cursorOuterRef.current.innerHTML = `EXPLORE`
+      cursorOuterRef.current.style.fontSize = `1px`
+
     } else {
       cursorInnerRef.current.style.transform = 'scale(1)'
       cursorOuterRef.current.style.transform = 'scale(1)'
       cursorOuterRef.current.innerHTML = ``
       cursorOuterRef.current.style.backgroundColor = `rgba(${color},0.4)`
     }
-  }, [innerScale, outerScale, dragOuterScale, dragInnerScale, dragColor, color, isActive, dragIsActive])
+  }, [innerScale, outerScale, dragOuterScale, dragInnerScale, dragColor, color, isActive, dragIsActive, explore])
 
   useEffect(() => {
     if (isActiveClickable) {
@@ -138,10 +149,13 @@ function AnimatedCursor({
 
   useEffect(() => {
     const dragCarousel = document.querySelectorAll(
-      '.dragCarousel *'
+      '.dragCarousel *,.keen-slider *'
     )
     const clickables = document.querySelectorAll(
       'a, input[type="submit"], input[type="image"], label[for], select, button, .link'
+    )
+    const explore = document.querySelectorAll(
+      '.explore *'
     )
     dragCarousel.forEach((el) => {
       el.style.cursor = 'none'
@@ -157,6 +171,22 @@ function AnimatedCursor({
       })
       el.addEventListener('mouseout', () => {
         setdragIsActive(false)
+      })
+    })
+    explore.forEach((el) => {
+      el.style.cursor = 'none'
+      el.addEventListener('mouseover', () => {
+        setexplore(true)
+      })
+      el.addEventListener('click', () => {
+        setexplore(true)
+        setIsActiveClickable(true)
+      })
+      el.addEventListener('mouseup', () => {
+        setexplore(true)
+      })
+      el.addEventListener('mouseout', () => {
+        setexplore(false)
       })
     })
     clickables.forEach((el) => {
@@ -182,6 +212,20 @@ function AnimatedCursor({
 
     return () => {
       dragCarousel.forEach((el) => {
+        el.removeEventListener('mouseover', () => {
+          setdragIsActive(true)
+        })
+        el.removeEventListener('click', () => {
+          setdragIsActive(true)
+        })
+        el.removeEventListener('mouseup', () => {
+          setdragIsActive(true)
+        })
+        el.removeEventListener('mouseout', () => {
+          setdragIsActive(false)
+        })
+      })
+      explore.forEach((el) => {
         el.removeEventListener('mouseover', () => {
           setdragIsActive(true)
         })

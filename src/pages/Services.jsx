@@ -162,7 +162,7 @@ function Services() {
         }
       </div>
       <div className='ourWorkHomepageSection' id="our-work">
-        <div className="flex items-end justify-between mb-6 w-8/12 m-auto">
+        <div className="flex items-end justify-between mb-10 w-8/12 m-auto">
           <div>
             <h3>
               Our Work

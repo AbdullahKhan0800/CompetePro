@@ -9,12 +9,14 @@ import AnimatedCursor from './components/animatedCursor';
 
 function Layout() {
     const [explore, setexplore] = useState(true)
+    const [menuToggle, setmenuToggle] = useState(false)
+
     return (
         <>
-            <div className=' hidden md:block'>
-                <AnimatedCursor color={explore ? '255, 255, 255' : '28, 114, 184'} />
+            <div className='hidden md:block'>
+                <AnimatedCursor color={explore || menuToggle ? '255, 255, 255' : '28, 114, 184'} />
             </div>
-            <Menu heroBanner={explore} />
+            <Menu menuToggle={explore} setmenuToggle={setmenuToggle} />
             <Hero setexplore={setexplore} explore={explore} />
             {explore === false &&
                 <>

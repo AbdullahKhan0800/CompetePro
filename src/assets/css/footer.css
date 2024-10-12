@@ -326,7 +326,19 @@ form textarea {
 }
 
 @media screen and (max-width: 890px) {
-
+    .navigations{
+        grid-template-columns: 1fr 1fr;
+    }
+    .navigations .nav{
+        gap: 10px
+    }
+    .footer_copyRight {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .copyright li{
+        font-size: 10px;
+    }
     /* .h2,
     .headingHolo {
         font-size: 48px;
@@ -445,6 +457,13 @@ form textarea {
 }
 
 @media screen and (max-width: 768px) {
+    .copyright:last-child {
+        width: 100%;
+    }
+    .copyright:last-child ul {
+        width: 100%;
+        gap: 0;
+    }
     .mobileNav {
         display: grid;
         grid-template-columns: 40px 40px;
@@ -654,9 +673,5 @@ form textarea {
         justify-content: center;
         align-items: center;
         gap: 10px;
-    }
-
-    .copyright ul {
-        gap: 15px;
     }
 }

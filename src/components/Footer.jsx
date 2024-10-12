@@ -26,15 +26,15 @@ function Footer() {
                         <label htmlFor="newsletteremail" className={`labelEmailNewsletter${inputvalue !== '' ? " News_letter_value" : ""}`}>ENTER EMAIL</label>
                     </div>
                 </div>
-                <div className="navigations grid py-16 gap-10">
+                <div className="navigations grid pt-5 pb-4 md:py-16 gap-5 md:gap-10">
 
-                    <div className="nav border-black pt-10 border-t border-solid border-opacity-20">
+                    <div className="nav border-black pt-4 md:pt-10 border-t border-solid border-opacity-20 col-span-2 md:col-span-1">
                         <div className="footer-heading">Company</div>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, ipsam, beatae non rerum Lorem ipsum dolor sit amet.
                         </p>
                     </div>
-                    <div className="nav border-black pt-10 border-t border-solid border-opacity-20">
+                    <div className="nav border-black pt-4 md:pt-10 border-t border-solid border-opacity-20">
                         <div className="footer-heading">Resources</div>
                         <ul>
                             <li><NavLink to="/">Home</NavLink></li>
@@ -44,7 +44,7 @@ function Footer() {
                             <li><NavLink to="/privacy-policy">Privacy Policy</NavLink></li>
                         </ul>
                     </div>
-                    <div className="nav border-black pt-10 border-t border-solid border-opacity-20">
+                    <div className="nav border-black pt-4 md:pt-10 border-t border-solid border-opacity-20">
                         <div className="footer-heading">Follow us</div>
                         <ul className="followUsFooter">
                             <li><a href="https://www.shopify.com/partners/directory/partner/bigfolio-us" target="_blank" rel="noreferrer">Shopify
@@ -84,7 +84,7 @@ function Footer() {
             <div className="footer_copyRight">
                 <div className="copyright">
                     <ul>
-                        <li className="font-Euro text-sm font-bold">Copyright © 2021-2024 Bigfolio.</li>
+                        <li className="font-Euro text-sm font-bold">Copyright © 2021-2024 CompetePro.</li>
                     </ul>
                 </div>
                 <div className="copyright">

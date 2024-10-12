@@ -6,7 +6,7 @@
 @layer components {
     .container {
         width: 100%;
-        padding: 0 7rem;
+        padding: 0 7rem ;
         max-width: 100%;
     }
 
@@ -207,6 +207,7 @@ p,
     margin: 5px;
     background: #fff;
     cursor: pointer;
+    text-wrap: nowrap;
     border-radius: 20px;
     font-size: .8rem;
     color: #1c72b8;
@@ -228,6 +229,7 @@ p,
     padding: 9px 12px 9px;
     margin: 5px;
     text-transform: uppercase;
+    text-wrap: nowrap;
     font-family: 'AkkuratLight';
     background: #1c72b8;
     cursor: pointer;
@@ -317,7 +319,10 @@ p,
     margin-right: 3px;
 }
 
-@media screen and (max-width:1082px) {
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 0 5rem;
+    }
     .stylishfont {
         font-size: 12vw;
     }
@@ -376,4 +381,62 @@ p,
     align-items: center;
     grid-template-columns: 1fr 3fr 1fr;
     gap: 50px;
+}
+
+@media screen and (max-width: 1270px) {
+    
+    h1,
+    .primary_heading {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 1092px) {
+    h1, .primary_heading {
+        font-size: 50px;
+    }
+    a {
+        font-size: 17px;
+    }
+
+    p,
+    .paragraph {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h2,
+    .secondary_heading {
+        font-size: 38px;
+    }
+
+    h3,
+    .heading_three {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    p,
+    .paragraph {
+        font-size: 15px;
+    }
 }

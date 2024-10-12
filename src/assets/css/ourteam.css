@@ -27,32 +27,17 @@
 
 .member h4 {
     font-size: 20px;
+    text-align: center;
     margin-bottom: 5px;
 }
 
 .member a {
     color: #1c72b8;
     margin: 0 auto;
+    text-align: center;
     display: flex;
     align-items: center;
 }
-/* 
-.member button {
-    color: #1c72b8;
-    border: 1px solid #1c72b8;
-    background: transparent;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 9px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.member button:hover {
-    color: #fff;
-    background-color: #1c72b8;
-} */
 
 .spcial {
     color: #7c7d7d;
@@ -72,6 +57,10 @@
 }
 
 @media screen and (max-width:990px) {
+    .member h4 {
+        font-size: 19px;
+    }
+
     .ourteam-container {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
@@ -82,12 +71,19 @@
     .directeor {
         font-size: 26px;
     }
+
+    .member {
+        width: calc(100% - 20px);
+        margin: 0;
+        padding: 15px;
+    }
+
     .ourteam-container {
         grid-template-columns: auto;
-        grid-template-rows: repeat(6, auto);
         place-content: center;
         align-items: center;
         display: flex;
+        gap: 20px;
         flex-direction: column;
     }
 }

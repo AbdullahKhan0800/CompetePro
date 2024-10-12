@@ -120,7 +120,7 @@ aside ul li a:hover {
     color: #1c72b8;
 }
 
-.active-link{
+.active-link {
     color: #1c72b8 !important;
 }
 
@@ -150,6 +150,25 @@ aside ul li a:hover {
 
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #nav-icon4 {
+        width: 38px;
+        height: 38px;
+    }
+
+    #nav-icon4.open span:nth-child(3) {
+        top: 25px;
+    }
+
+    .Logo {
+        width: 65px;
+    }
+
+    .hamburger-menu-text {
+        font-size: 8px;
     }
 }
 

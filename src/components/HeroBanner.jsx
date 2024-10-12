@@ -7,7 +7,7 @@ export default function HeroBanner() {
                 <p className='mb-5 font-Euro text-[14px] text-white'>You are viewing <NavLink className={'currenturl font-Euro'} to="/">Home</NavLink>/<NavLink className={'currenturl font-Euro'} to="/services">Services</NavLink></p>
             </div>
             <div className="bg-aboutBoxPattern container">
-                <div className="flex justify-between items-center py-8">
+                <div className="flex justify-between items-center py-4 md:py-6 lg:py-8">
                     <h2 className="primary_heading text-white">
                         Trusted eCommerce
                     </h2>
@@ -15,12 +15,12 @@ export default function HeroBanner() {
                         Est.2021
                     </h2>
                 </div>
-                <hr className="my-4 opacity-30" />
-                <h2 className="headingBCClip primary_heading ml-32 py-8">
+                <hr className="my-2 lg:my-4 opacity-30" />
+                <h2 className="headingBCClip primary_heading ml-32 py-4 md:py-6 lg:py-8">
                     Shopify Plus
                 </h2>
-                <hr className="my-4 opacity-30" />
-                <div className="bannerGrid py-8">
+                <hr className="my-2 lg:my-4 opacity-30" />
+                <div className="bannerGrid py-4 md:py-6 lg:py-8">
                     <p className="paragraph text-white">
                         Transforming great ideas into profitable ventures.
                     </p>
