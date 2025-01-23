@@ -1,0 +1,204 @@
+/* All menu css here */
+.Logo {
+    width: 75px;
+    height: auto;
+}
+
+.hamburger-menu-text {
+    font-size: 10px;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+}
+
+/* Icon 1 */
+
+#nav-icon4 {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+#nav-icon4 span {
+    display: block;
+    transition: all 0.3s;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+/* Icon 4 */
+
+
+#nav-icon4 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+    top: 7px;
+    height: 2px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+    top: 14px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -2px;
+    left: 8px;
+    height: 2px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 30px;
+    left: 8px;
+    height: 2px;
+}
+
+/* togle menu fulll screeen */
+
+.open {
+    transform: translateX(0%);
+}
+
+aside ul {
+    transition: 1s;
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+aside ul li a {
+    color: white;
+    font-size: 30px;
+    font-family: 'EurostileExt' !important;
+}
+
+aside ul li a:hover {
+    color: #1c72b8;
+}
+
+.active-link {
+    color: #1c72b8 !important;
+}
+
+.thisisbackofthepoly {
+    position: absolute;
+    font-size: 9vw;
+    font-family: POLYA !important;
+    font-weight: lighter;
+    top: 31%;
+    z-index: -1;
+    color: #1c72b8;
+    transition: all 1s;
+}
+
+.fadeInOutanimation {
+    animation: fadeInOutanimation 0.5s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+
+@keyframes fadeInOutanimation {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #nav-icon4 {
+        width: 38px;
+        height: 38px;
+    }
+
+    #nav-icon4.open span:nth-child(3) {
+        top: 25px;
+    }
+
+    .Logo {
+        width: 65px;
+    }
+
+    .hamburger-menu-text {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .thisisbackofthepoly {
+        display: none;
+    }
+
+    .sidebar {
+        position: relative;
+        height: auto;
+        width: 90% !important;
+        margin: auto;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+
+    .sidebar>div:nth-child(3) {
+        display: none;
+    }
+
+    .sidebar>div:nth-child(1) {
+        position: fixed;
+        top: 8px;
+        margin-bottom: 0px;
+        left: 18px;
+    }
+
+    aside ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

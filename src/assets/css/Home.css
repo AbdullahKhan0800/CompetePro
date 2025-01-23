@@ -1,0 +1,153 @@
+/* parallex grid */
+
+.paralexGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.hedaingParalex {
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+.rightAlign {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: right;
+    padding-top: 25px;
+}
+
+.girdThreeparalex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.grid-containerparalex {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    position: relative;
+}
+
+/* ///////////// */
+
+.rightlanguagesTabs .tab {
+    padding-left: 60px;
+    margin-left: -60px;
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.rightlanguagesTabs {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.leftlanguagesTabs {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+    margin-top: 115px;
+}
+
+.leftlanguagesTabs .tab {
+    padding-right: 60px;
+    margin-right: -60px;
+    opacity: 0.5;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.innerSnippetcontent {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.rightcodeContent .contentActive {
+    display: block !important;
+    animation: fadeInFromRight .4s cubic-bezier(.45, .05, .55, .95) forwards;
+    overflow: hidden;
+    position: relative;
+}
+
+.leftcodeContent .contentActive {
+    display: block !important;
+    animation: fadeInFromLeft .4s cubic-bezier(.45, .05, .55, .95) forwards;
+    overflow: hidden;
+}
+
+@keyframes fadeInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.tabactive {
+    color: #EBC6E6;
+    border-bottom: 1px solid #EBC6E6;
+    width: fit-content;
+    opacity: 1 !important;
+}
+
+
+.opacityHalf {
+    opacity: 0.5;
+}
+
+.content {
+    display: none;
+}
+
+
+@media screen and (max-width: 1280px){
+    .paralexGrid {
+        grid-template-columns: 1fr !important;
+    }
+    .grid-containerparalex {
+        padding: 40px 0px;
+    }
+}
+@media screen and (max-width: 768px){
+    .girdThreeparalex{
+        gap: 10px;
+    }
+    .girdThreeparalex h5{
+        text-align: right;
+    }
+    .rightAlign{
+        padding-top: 15px;
+    }
+}
