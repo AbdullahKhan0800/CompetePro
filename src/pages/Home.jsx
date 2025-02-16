@@ -17,13 +17,13 @@ function Home() {
                     <div className='mt-6 mb-10 w-full flex justify-between items-center'>
                         <div className='flex g-1 flex-wrap'>
                             <NavLink to="/about-us" className='secondary-btn'>About Compete Pro</NavLink>
-                            <NavLink to="/" className='secondary-btn'>Services</NavLink>
-                            <NavLink to="/" className='secondary-btn'>E Commerce</NavLink>
-                            <NavLink to="/" className='secondary-btn'>Full Stack</NavLink>
+                            <NavLink to="/services" className='secondary-btn'>Services</NavLink>
+                            <NavLink to="/services" className='secondary-btn'>E Commerce</NavLink>
+                            <NavLink to="/services" className='secondary-btn'>Full Stack</NavLink>
                         </div>
                         <div className='flex g-1 flex-wrap justify-end'>
                             <NavLink to="/" className='primary-btn'>Menu</NavLink>
-                            <NavLink to="/" className='primary-btn'>Contact Us</NavLink>
+                            <NavLink to="/contact" className='primary-btn'>Contact Us</NavLink>
                         </div>
                     </div>
                 </div>
